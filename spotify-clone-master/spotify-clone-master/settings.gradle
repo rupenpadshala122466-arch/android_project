@@ -1,0 +1,44 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "SpotifyClone"
+
+include ':app'
+include ':feature:welcome'
+include ':feature:login'
+include ':feature:signup'
+include ':feature:home'
+include ':feature:search'
+include ':feature:library'
+include ':feature:album'
+include ':feature:artist'
+include ':feature:category'
+include ':feature:searchresult'
+include ':feature:musicinfo'
+include ':feature:playlist'
+include ':feature:playlistedit'
+include ':feature:playlistselect'
+include ':feature:playlistinfo'
+include ':feature:player'
+include ':core:auth'
+include ':core:player'
+include ':core:ui'
+include ':core:domain'
+include ':core:data'
+include ':core:network'
+include ':core:model'
+include ':core:common'
+include ':core:testing'
+include ':core:database'
+include ':core:analytics'
