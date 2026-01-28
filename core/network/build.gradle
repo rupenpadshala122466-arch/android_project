@@ -1,0 +1,20 @@
+plugins {
+    alias libs.plugins.android.library
+}
+
+android {
+    namespace 'com.oscarliang.spotifyclone.core.network'
+    compileSdk 34
+    defaultConfig {
+        minSdk 21
+    }
+}
+
+dependencies {
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.firestore
+    implementation libs.dagger.core
+    implementation libs.rxjava
+
+    annotationProcessor libs.dagger.compiler
+}
